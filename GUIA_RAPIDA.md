@@ -56,7 +56,7 @@ Tres opciones:
 - `Filtros`: Frecuencias notch y pasa-banda
 - `IA`: Modelo de Ollama, servidor
 
-### ▶️ Paso 3: Ejecuta Análisis
+### Paso 3: Ejecuta Análisis
 
 Haz clic en el botón azul grande:
 > **"Iniciar Análisis Completo"**
@@ -66,9 +66,9 @@ Espera 3–30 segundos según la fuente:
 - MIT-BIH: ~10 segundos (primera vez, descarga datos)
 - Ollama: +10–20 segundos (genera diagnóstico)
 
-### 📊 Paso 4: Visualiza Resultados (3 Pestañas)
+### Paso 4: Visualiza Resultados (3 Pestañas)
 
-#### 🏥 Pestaña 1: **Reporte de Salud**
+#### Pestaña 1: **Reporte de Salud**
 - **Para No-Técnicos**: Indicadores en lenguaje simple
   - ✓ Ritmo cardíaco (bpm)
   - ✓ Regularidad del latido
@@ -78,14 +78,14 @@ Espera 3–30 segundos según la fuente:
 - Gráfico ECG limpio con latidos marcados
 - Interpretación IA (si está disponible)
 
-#### 🔬 Pestaña 2: **Señal y Filtrado**
+#### Pestaña 2: **Señal y Filtrado**
 - **Para Estudiantes de Ingeniería**: Cómo funcionan los filtros
   - Comparación antes/después
   - Explicación de Filtro Notch (elimina 60 Hz)
   - Explicación de Filtro Pasa-Banda (mantiene cardíaco)
   - Tabla de métricas
 
-#### 🔧 Pestaña 3: **Vista Técnica**
+#### Pestaña 3: **Vista Técnica**
 - **Para Trabajo Académico**: Análisis profundo
   - Mapa de Polos y Ceros (plano z)
   - Diagrama de Bode (respuesta en frecuencia)
@@ -96,7 +96,7 @@ Espera 3–30 segundos según la fuente:
 
 ---
 
-## 📝 Ejemplo Paso a Paso
+## Ejemplo Paso a Paso
 
 ### Ejemplo 1: Análisis Rápido (Demostración)
 
@@ -162,30 +162,30 @@ Espera 3–30 segundos según la fuente:
 
 ---
 
-## ⚠️ Soluciones a Problemas
+## Soluciones a Problemas
 
-### ❌ Error: "ModuleNotFoundError: No module named 'streamlit'"
+### Error: "ModuleNotFoundError: No module named 'streamlit'"
 
 **Solución:**
 ```bash
 pip install -r requirements.txt
 ```
 
-### ❌ Error: "[Error de conexión] Ollama no está corriendo"
+### Error: "[Error de conexión] Ollama no está corriendo"
 
 **Solución:**
 - Abre OTRA terminal
 - Ejecuta: `ollama serve`
 - O desactiva IA: Configuración avanzada → Desactiva "Activar diagnóstico IA"
 
-### ❌ Error: "No se encontraron suficientes datos numéricos en el archivo"
+### Error: "No se encontraron suficientes datos numéricos en el archivo"
 
 **Solución:**
 - Tu archivo CSV/TXT no tiene el formato correcto
 - Verifica que cada línea tenga un número
 - Prueba primero con Demostración
 
-### 🐢 "Está muy lento"
+### "Está muy lento"
 
 **Posibles causas:**
 - Ollama procesando (puede ser lento en CPU)
@@ -199,7 +199,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎯 Consejos para Trabajo Académico
+## Consejos para Trabajo Académico
 
 ### Para Explicar Laplace
 
@@ -237,31 +237,31 @@ pip install -r requirements.txt
 
 ---
 
-## 📱 Interfaz Visual Rápida
+## Interfaz Visual Rápida
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  🏥 Analizador Inteligente de Señales ECG                       │
-│  📚 Transformada de Laplace en Filtrado Cardíaco               │
-│                                              [FUENTE: SIMULADOR] │
-│                                                     [360 Hz · Fs] │
-└──────────────────────────────────────────────────────────────────┘
+│  Analizador Inteligente de Señales ECG                          │
+│  Transformada de Laplace en Filtrado Cardíaco                   │
+│                                              [FUENTE: SIMULADOR]│
+│                                                    [360 Hz · Fs]│
+└─────────────────────────────────────────────────────────────────┘
 
 ┌─ PANEL IZQUIERDO ──┐  ┌─ PANEL PRINCIPAL ──────────────────────┐
 │                    │  │                                         │
-│ Analizador ECG     │  │ 📚 ¿Cómo funciona?                    │
-│ ───────────────    │  │    [expandir para ver Laplace]       │
+│ Analizador ECG     │  │ ¿Cómo funciona?                         │
+│ ───────────────    │  │    [expandir para ver Laplace]          │
 │ Fuente:            │  │                                         │
-│ ◉ Demostración     │  │ [Introduc. a Laplace]                 │
+│ ◉ Demostración     │  │ [Introduc. a Laplace]                  │
 │ ○ MIT-BIH          │  │                                         │
-│ ○ Mi archivo       │  │ ───────────────────────────────────── │
+│ ○ Mi archivo       │  │ ─────────────────────────────────────   │
 │                    │  │                                         │
-│ Segundos: [10]     │  │ 🟦 Iniciar Análisis Completo          │
+│ Segundos: [10]     │  │     Iniciar Análisis Completo           │
 │                    │  │                                         │
-│ ⚙️ Avanzado        │  │ ───────────────────────────────────── │
-│    [expandir]      │  │                                         │
-│                    │  │ 📊 [Reporte] [Señal] [Técnica]         │
-│                    │  │                                         │
+│  Avanzado          │  │ ─────────────────────────────────────  │
+│    [expandir]      │  │                                        │
+│                    │  │  [Reporte] [Señal] [Técnica]           │
+│                    │  │                                        │
 │                    │  │ [Contenido de pestaña seleccionada]    │
 │                    │  │                                         │
 │                    │  │                                         │
@@ -270,7 +270,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📚 Más Información
+## Más Información
 
 - **README.md**: Marco teórico completo, referencias académicas
 - **app.py**: Código fuente del frontend
@@ -279,5 +279,3 @@ pip install -r requirements.txt
 
 ---
 
-**¡Lista para usar!** 🚀  
-*Si algo no funciona, revisa "Soluciones a Problemas" arriba.*

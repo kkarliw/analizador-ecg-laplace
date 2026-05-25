@@ -1,11 +1,5 @@
 # Filtrado y analisis de una senal biomedica ECG usando Transformada de Laplace
 
-## Integrantes
-
-- Karla
-- Integrante 2
-- Integrante 3
-
 ## 1. Introduccion al problema
 
 Las senales biomedicas permiten estudiar el comportamiento del cuerpo humano mediante datos medibles. Una de las mas importantes es el electrocardiograma, conocido como ECG, que registra la actividad electrica del corazon.

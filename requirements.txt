@@ -1,0 +1,43 @@
+# ════════════════════════════════════════════════════════════════════════════════
+# ANALIZADOR ECG - TRANSFORMADA DE LAPLACE
+# Dependencias para la aplicación Streamlit de análisis de señales cardíacas
+# ════════════════════════════════════════════════════════════════════════════════
+
+# INTERFAZ Y FRONTEND
+streamlit>=1.28.0              # Framework web interactivo para Python
+plotly>=5.17.0                 # Visualización interactiva de gráficos
+
+# PROCESAMIENTO DE SEÑALES BIOMÉDICAS
+numpy>=1.24.0                  # Álgebra lineal y operaciones numéricas
+scipy>=1.11.0                  # Filtrado digital, procesamiento de señales
+pandas>=2.0.0                  # Manipulación de datos tabulares
+
+# VISUALIZACIÓN (matplotlib subyacente en scipy)
+matplotlib>=3.7.0              # Gráficos estáticos, análisis offline
+
+# LECTURA DE DATOS ECG CLÍNICOS
+wfdb>=4.1.1                    # MIT-BIH PhysioNet: lectura de records cardíacos
+
+# COMUNICACIÓN CON LLM LOCAL (OPCIONAL)
+requests>=2.31.0               # HTTP client para conectar con Ollama
+
+# ════════════════════════════════════════════════════════════════════════════════
+# NOTAS:
+# ════════════════════════════════════════════════════════════════════════════════
+# 
+# 1. OLLAMA (opcional para diagnóstico IA):
+#    - Descargar desde: https://ollama.ai/
+#    - Ejecutar: ollama serve (en otra terminal)
+#    - Modelos sugeridos: llama3.1:8b, llama3:latest, mistral
+#    - NO es dependencia pip (se instala por separado)
+#
+# 2. MIT-BIH Database:
+#    - Automáticamente descargados por `wfdb` desde PhysioNet
+#    - Almacenados en: ./data/
+#
+# 3. Hardware (Opcional):
+#    - GPU NVIDIA: CUDA Toolkit + cuDNN (para Ollama acelerado)
+#    - CPU: Completamente funcional, procesamiento más lento
+#
+# ════════════════════════════════════════════════════════════════════════════════
+

@@ -1,6 +1,6 @@
 # Generador y Analizador de Senales Biomedicas ECG
 
-Proyecto final de Transformada de Laplace para la asignatura de Ecuaciones Diferenciales / Matematicas Aplicadas.
+Proyecto final de Transformada de Laplace para la asignatura de Ecuaciones Diferenciales / Cálculo IV.
 
 La aplicacion permite generar, cargar, filtrar e interpretar senales ECG. El objetivo principal es mostrar como la Transformada de Laplace y las funciones de transferencia se pueden usar para modelar filtros que reducen ruido en una senal realista.
 
